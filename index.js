@@ -1,7 +1,7 @@
-console.log("Just started scripting");
 
+// parent container
 const taskContainer=document.querySelector(".task_container");
-// console.log(taskContainer);
+
 
 const newCard=({id,imageUrl,taskTitle,taskType,taskDescription})=>
     `
@@ -34,8 +34,8 @@ const saveChanges=()=>{
         taskDescription:document.getElementById("taskdescp").value,
 
 
-    };
-    const cardData=newCard(taskData);
+    };  
+    const cardData=newCard(taskData);      // passing object to arrow ft
      taskContainer.insertAdjacentHTML("beforeend",cardData);
 };
 
